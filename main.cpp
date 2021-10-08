@@ -8,11 +8,6 @@
 #include <stdio.h>
 
 #include "Container.h"
-#include "Common.h"
-#include "Matrix.h"
-#include "Diagonal.h"
-#include "Common.h"
-#include "Triangularn.h"
 
 void errMessage1() {
     printf("incorrect command line!\n"
