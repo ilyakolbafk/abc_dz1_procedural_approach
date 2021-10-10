@@ -58,7 +58,6 @@ void ShakerSort(Container &c, int size) {
     bool swapped = true;
     int start = 0;
     int end = size - 1;
-
     while (swapped) {
         swapped = false;
         for (int i = start; i < end; ++i) {

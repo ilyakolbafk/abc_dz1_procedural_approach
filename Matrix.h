@@ -1,5 +1,5 @@
-#ifndef TASK1_MATRIX_H
-#define TASK1_MATRIX_H
+#ifndef ABC_DZ1_MATRIX_H
+#define ABC_DZ1_MATRIX_H
 
 //------------------------------------------------------------------------------
 // Matrix.h - contains definition of matrix.
@@ -10,10 +10,12 @@
 #include "Triangularn.h"
 
 //------------------------------------------------------------------------------
-// Structure summarizing all shapes.
+// Structure summarizing all matrices.
 struct Matrix {
-    // Values of keys for different figures.
-    enum key {COMMON, DIAGONAL, TRIANGULAR};
+    // Values of keys for different matrices.
+    enum key {
+        COMMON, DIAGONAL, TRIANGULAR
+    };
     key k; // Key.
     // Alternatives.
     union { // Simple realization.
@@ -23,19 +25,19 @@ struct Matrix {
     };
 };
 
-// Input figure.
-Matrix *In(FILE* file);
+// Input matrix.
+Matrix *In(FILE *file);
 
 // Random input.
 Matrix *InRnd();
 
-// Output figure.
-void Out(Matrix &m, FILE* file);
+// Output matrix.
+void Out(Matrix &m, FILE *file);
 
-// Get square of figure.
+// Get average of elements of figure.
 double Average(Matrix &m);
 
 // Swap function for ShakerSort.
 void Swap(Matrix &m1, Matrix &m2);
 
-#endif //TASK1_MATRIX_H
+#endif //ABC_DZ1_MATRIX_H

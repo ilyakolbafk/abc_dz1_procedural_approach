@@ -10,7 +10,6 @@
 Matrix *In(FILE *file) {
     Matrix *mat;
     int k;
-    int n;
     fscanf(file, "%d", &k);
     switch (k) {
         case 1:
@@ -34,6 +33,7 @@ Matrix *In(FILE *file) {
 
 }
 
+//------------------------------------------------------------------------------
 // Random values for matrix.
 Matrix *InRnd() {
     Matrix *mat;

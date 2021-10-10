@@ -16,13 +16,13 @@ struct Triangularn {
 };
 
 // Input parameters from file.
-void In(Triangularn &t, FILE* file);
+void In(Triangularn &t, FILE *file);
 
 // Random parameters.
 void InRnd(Triangularn &t);
 
 // Output triangularn matrix.
-void Out(Triangularn &t, FILE* file);
+void Out(Triangularn &t, FILE *file);
 
 // Get average of elements of triangularn matrix.
 double Average(Triangularn &t);

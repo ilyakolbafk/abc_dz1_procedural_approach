@@ -7,7 +7,7 @@
 // Rand.h - contains generator of random values.
 //------------------------------------------------------------------------------
 
-// Random integer from 1 to 100.
+// Random integer from 1 to 20.
 int Random();
 
 // Random double from -100 to 100.

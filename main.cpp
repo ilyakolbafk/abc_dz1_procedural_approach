@@ -34,7 +34,7 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    printf("Start");
+    printf("Start\n");
     Container c;
     Init(c);
     char buffer[10];
@@ -47,10 +47,10 @@ int main(int argc, char* argv[]) {
     }
     else if(!strcmp(argv[1], "-n")) {
         int size = atoi(argv[2]);
-        if((size < 1) || (size > 29999)) {
-            printf("incorrect number of figures = ");
+        if((size < 1) || (size > 15000)) {
+            printf("incorrect number of matrices = ");
             snprintf(buffer, 10, "%d", size);
-            printf(". Set 0 < number <= 29999\n");
+            printf(". Set 0 < number <= 15000\n");
             return 3;
         }
         // System clock.
@@ -79,7 +79,7 @@ int main(int argc, char* argv[]) {
 
     Clear(c);
 
-    clock_t end = clock(); // Конечное время.
+    clock_t end = clock(); // End time.
     double total_time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
     printf("%s %lf %s \n", "Total time for program:", total_time, "seconds");
     printf("Stop");
