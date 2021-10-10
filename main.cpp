@@ -9,16 +9,8 @@
 
 #include "Container.h"
 
-void errMessage1() {
-    printf("incorrect command line!\n"
-           "  Waited:\n"
-           "     command -f infile outfile01 outfile02\n"
-           "  Or:\n"
-           "     command -n number outfile01 outfile02\n");
-}
-
-void errMessage2() {
-    printf("incorrect qualifier value!\n"
+void errMessage() {
+    printf("incorrect!\n"
            "  Waited:\n"
            "     command -f infile outfile01 outfile02\n"
            "  Or:\n"
@@ -30,7 +22,7 @@ int main(int argc, char* argv[]) {
     clock_t start = clock(); // Start time.
 
     if(argc != 5) {
-        errMessage1();
+        errMessage();
         return 1;
     }
 
@@ -59,7 +51,7 @@ int main(int argc, char* argv[]) {
         InRnd(c, size);
     }
     else {
-        errMessage2();
+        errMessage();
         return 2;
     }
 
