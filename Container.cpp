@@ -53,16 +53,6 @@ void Out(Container &c, FILE *file) {
 }
 
 //------------------------------------------------------------------------------
-// Get sum of squares all figures.
-double SquareSum(Container &c) {
-    double sum = 0.0;
-    for (int i = 0; i < c.len; i++) {
-        sum += Average(*(c.cont[i]));
-    }
-    return sum;
-}
-
-//------------------------------------------------------------------------------
 // Shaker sort for container.
 void ShakerSort(Container &c, int size) {
     bool swapped = true;
